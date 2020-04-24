@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang= "pl">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="description" content= "opis">
+        <meta name="keywords" content= "tagi">
+        <meta name="author" content= "autor">
+        <link rel="stylesheet" href= "projekt.css">
+        <title> Drony - technologie jutra - budowa dronów</title>
+    </head>
+    <body class="subsite">
+        <h1>Budowa dronów</h1>
+        <article class="arrt1">
+            <h2>Rama drona</h2>
+                <p>
+                    Głównym elementem drona jest rama.<br>
+                    Klasyfikacja konstrukcji ram opiera się o liczbę ramion:
+                        <ul>
+                            <li>Bicopter – dwa silniki,</li>
+                            <li>Tricopter – trzy silniki,</li>
+                            <li>Quadrocopter – cztery silniki,</li>
+                            <li>Hexacopter – sześć silników,</li>
+                            <li>Octocopter – osiem silników.</li>
+                        </ul>
+                    Konstrukcja z większą liczbą ramion pozwala na bardziej stabilny lot, zaś podwójne
+                    śmigła montowane na mniejszej liczbie ramion zwiększają siłę ciągu drona,
+                    umożliwiając większy udźwig i ubezpieczając równoległy silnik na wypadek awarii.
+                    Pod względem układów śmigieł w stosunku do kierunku lotu wyróżnia się pięć typów:<br>
+                        <ul>
+                            <li>+ - jedno śmigło jest wiodące (przy co najmniej 4 śmigłach),</li>
+                            <li>X – najczęstsza konstrukcja, dwa śmigła są wiodące (przy parzystej liczbie śmigieł),</li>
+                            <li>Y – trzy ramiona ułożone w znak Y, jedno lub dwa ramiona mogą być wiodące,</li>
+                            <li>V – bardzo rzadki układ, gdzie dwa śmigła prowadzą na wyciągniętych ramionach,</li>
+                            <li>H – bardzo rzadki układ, gdzie konstrukcja opiera się na kształcie litery H, z dwoma śmigłami prowadzącymi.</li>
+                        </ul>
+                    W każdej z konstrukcji można zamontować podwójne śmigła (u góry i na dole), co
+                    zdecydowanie zwiększa siłę drona, a nie wymaga dodawania kolejnego ramienia
+                    konstrukcji. Tym samym obniżona jest waga własna multikoptera i spadają koszty
+                    materiału, a dron może unieść cięższy ładunek i ma większą siłę do walki z wiatrem.
+                    Podwójne śmigła kręcą się w przeciwnych kierunkach, równoważąc nawzajem siłę
+                    bezwładności.
+                </p> </article>
+                <article class="arrt1">
+            <h2>Silniki</h2>
+                <p>
+                    Silniki możemy zaklasyfikować jako szczotkowe lub bezszczotkowe.
+                    Silnik szczotkowy to klasyczny silnik prądu stałego, zbudowany z magnesów, wirnika,
+                    komutatora i szczotek. Sterowanie obrotem odbywa się poprzez zmienny przepływ
+                    prądu w zwojach określonych przez komutator.<br>
+                    Silnik bezszczotkowy to silnik prądu stałego zbudowany z uzwojeń i wirnika z
+                    magnesami. Rolę komutatora pełni osobna elektronika sterująca prędkością silnika
+                    (ESC) za pomocą zmiany faz jego uzwojeń.<br>
+                    W konstrukcji multikopterów wykorzystywane są elektryczne silniki bezszczotkowe
+                    zasilane przez prąd trójfazowy. Zewnętrzna, neodymowa część silnika to outrunner,
+                    a inrunner to część wewnętrzna z piastą. Pracy silnika nie może towarzyszyć
+                    temperatura powyżej 70°C, ponieważ przegrzanie może spowodować
+                    rozmagnesowanie magnesów i zakończenie pracy.<br>
+                    Parametry silników mogą być opisywane poprzez:<br>
+                        <ul>
+                            <li>V - maksymalne napięcie</li>
+                            <li>Rpm - maksymalna liczba obrotów na minutę</li>
+                            <li>KV - liczba obrotów na minutę uzyskana z jednego wolta</li>
+                            <li>A - maksymalne natężenie prądu</li>
+                            <li>W - maksymalna moc</li>
+                        </ul>
+                </p></article>
+            <article class="arrt1">
+            <h2>Kontroler lotu</h2>
+                <p>
+                    To najbardziej zaawansowany podzespół multikoptera wyposażony w mnóstwo
+                    czujników, w tym żyroskop, akcelerometr, magnetometr czy barometr. Dzięki
+                    odpowiednim algorytmom zaprogramowanym w mikrokontrolerze, kontroler steruje
+                    równowagą drona za pomocą odpowiednio dobranego obrotu zespołu silników. To
+                    jakość wykonania sterownika oraz użytych czujników odpowiada za
+                    niezawodność całego zestawu, a także możliwość integracji odpowiednio złożonego
+                    oprogramowania, oferującego potrzebne funkcje.
+                </p></article>
+            <article class="arrt1">
+            <h2>Aparatura</h2>
+                <p>
+                    Aparatura sterująca to urządzenie, które nadaje sygnał z poleceniem pilota do
+                    maszyny latającej, a kierunek lotu jest dalej kontrolowany poprzez odbiornik i
+                    kontroler lotu. Istotne parametry to częstotliwość nadawania, głównie 2,4 GHz oraz
+                    liczba kanałów komunikacji z dronem (kanałem określa się możliwość wysyłania
+                    jednego polecenia, np. wzleć/opadnij, nagrywaj/zatrzymaj nagrywanie). Minimalna
+                    liczba kanałów do pilotowania drona to 6:
+                        <ul>
+                            <li>V - maksymalne napięcie</li>
+                            <li>Rpm - maksymalna liczba obrotów na minutę</li>
+                            <li>KV - liczba obrotów na minutę uzyskana z jednego wolta</li>
+                            <li>A - maksymalne natężenie prądu</li>
+                            <li>W - maksymalna moc</li>
+                        </ul>
+                    Przykładowe wykorzystanie dodatkowych kanałów to:
+                        <ul>
+                            <li>Tryb lotu GPS,</li>
+                            <li>Autostart,</li>
+                            <li>Autolądowanie,</li>
+                            <li>Powrót do domu,</li>
+                            <li>Podniesienie nóg,</li>
+                            <li>Nagrywanie start/stop,</li>
+                            <li>Fail safe,</li>
+                            <li>Tryb orientacji.</li>
+                        </ul>
+                    W przypadku wyposażenia aparatury w odbiornik FPV istnieje też możliwość
+                    dołączenia monitora z podglądem nagrywanego filmu. Część aparatów ma
+                    wbudowany OSD (on screen display), a część jest wyposażona w uchwyt na monitor
+                    lub smartfon czy tablet. W aparaturze wykorzystywana jest też telemetria, czyli
+                    technologia przesyłania danych pomiarowych na dużą odległość. W multikopterach
+                    telemetrię stosuje się do pomiarów napięć, obciążenia, wysokości, danych z
+                    czujników, a w niektórych kontrolerach ma też miejsce bezprzewodowe wgrywanie
+                    parametrów misji autonomicznej.
+                </p></article>
+        <article class="arrt1">
+            <h2>Akumulator</h2>
+                <p>
+                    Akumulator Li-Po to litowo-polimerowy rodzaj akumulatora. Pakiety stosowane do
+                    zasilania dronów charakteryzuje bardzo duża pojemność i wydajność prądowa.
+                    Składają się one z cel o napięciu znamionowym 3,7V/cela. Maksymalne napięcie celi
+                    (w pełni naładowany pakiet) to 4.2V, a maksymalne dopuszczalne rozładowanie celi
+                    to 3.3V. Ładowanie oraz rozładowanie powyżej lub poniżej powyższych parametrów
+                    skutkuje uszkodzeniem akumulatora lub jego zapłonem. Pakiet 3S oznacza
+                    akumulator o 3 ogniwach (celach). Napięcie znamionowe takiego pakietu to 3S x
+                    3.7V = 11.1V, napięcie maksymalne to 3 x 4.2V = 12.6V, a minimalne dopuszczalne
+                    napięcie to 3 x 3.3V = 9.9V. Wśród parametrów pakietu znajdują się również
+                    pojemność mAh (np. 5000mAh). Pakiet o pojemności 4000mAh i maksymalnym
+                    prądzie obciążenia 30C posiada wydajność prądową: 4Ah (4000mAh) x 30C = 120A
+                    (amper) Pakiet o pojemności 4000mAh i maksymalnym prądzie ładowania 1C
+                    ładujemy z maksymalnym natężeniem prądu: 4000mAh (4ah) x 1C = 4A (ampery)
+                    Przy doborze akumulatora do drona, bierze się pod uwagę jego wydajność prądową
+                    (zawsze musi być większa o minimum 20% od maksymalnego poboru prądu) oraz
+                    liczbę cel (liczba cel nie może być większa niż zalecana przez producenta silników i
+                    regulatorów obrotów).
+                </p></article>
+    </body>
+    </html>
