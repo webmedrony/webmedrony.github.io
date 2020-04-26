@@ -59,9 +59,10 @@ body
 	margin-right: 3%;
 	float: left;
 	background-color: black;
-	width: 15%;
+	width: 18%;
 	height: fit-content;
 	display: block;
+	padding-top: 0px;
 }
 .sidebar > li
 {
@@ -120,8 +121,8 @@ body
 }
 .art1:hover
 {
-	height: 1300px;
-	padding-bottom: 50px;
+	height: 1800px;
+	padding-bottom: 17px;
 }
 
 
@@ -147,12 +148,12 @@ body
 	transition-duration: 2s;
 	transition-timing-function: linear;
 }
-.subsite:hover
+/*.subsite:hover
 {
 	height: 1300px;
 	padding-bottom: 50px;
 	background-image: none;
-}
+}*/
 .subsite > h1
 {
 	text-align: left;
@@ -189,6 +190,36 @@ body
 {
 	text-align: left;
 }
+.subsiteGallery
+{
+	background-color:white;
+	background-image: none;
+	font-family: 'Century Gothic';
+	width: 97%;
+	height: 500px;
+	color: #000000;
+	font-family: 'Century Gothic' rgb(0, 0, 0);
+	font-size: 20px;
+	margin-right: 35%;
+	margin-bottom:30px;
+	text-align: justify;
+	padding-top: 17px;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 17px;
+	/*height: 700px;
+	overflow: hidden;
+	transition: all;
+	transition-duration: 2s;
+	transition-timing-function: linear;*/
+}
+.subsite2Gallery:hover
+{
+	height: 1000px;
+	padding-bottom: 0px;
+	background-image: none;
+}
+
 .arrt1
 {
 	background-color: black;
